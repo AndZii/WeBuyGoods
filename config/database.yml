@@ -6,7 +6,6 @@
 #
 default: &default
   adapter: mysql
-
   pool: 5
   timeout: 5000
 
@@ -21,5 +20,7 @@ test:
   <<: *default
 production:
   <<: *default
+  encoding: utf8
   database: sellelec_webuygoods
   username: sellelec_admin
+  password: webuygoods
