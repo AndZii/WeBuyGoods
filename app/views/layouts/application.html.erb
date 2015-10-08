@@ -20,20 +20,25 @@
 
 <div id="all">
 
+  <%= yield %>
+
+<% if action_name == 'index' %>
+
 <%= render 'shared/advantage' %>
 
 <%= render 'shared/products' %>
 
 <!-- render 'shared/inspired' %>-->
 
-<!-- render 'shared/blog' %>-->
+<%= render 'shared/blog' %>
 
-<!--<%= yield %>-->
-
+<% end %>
 
 <%= render 'shared/footer' %>
 
 <%= render 'shared/copywrite' %>
+
+
 
 <%= render 'shared/scripts' %>
 

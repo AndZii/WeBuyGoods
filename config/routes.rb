@@ -1,8 +1,13 @@
 Rails.application.routes.draw do
+  resources :posts
+  get 'blog/index'
+
+  get 'blog/show'
+
   resources :caurusel_images
   resources :products
   get 'admin/index'
-
+  get 'main/blog' => 'main#blog', as: "blog"
   get 'main/index'
 
   # The priority is based upon order of creation: first created -> highest priority.

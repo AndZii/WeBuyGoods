@@ -1,0 +1,87 @@
+<div id="all">
+
+  <div id="content">
+    <div class="container">
+
+      <div class="col-sm-12">
+        <ul class="breadcrumb">
+
+          <li><a href="index.html">Home</a>
+          </li>
+          <li>Blog listing</li>
+        </ul>
+      </div>
+
+
+
+      <!-- *** LEFT COLUMN ***
+_________________________________________________________ -->
+
+      <div class="col-sm-9" id="blog-listing">
+
+
+
+
+        <div class="box">
+
+          <h1>We Buy Goods News</h1>
+          <p>Here we need to add some text, like description!</p>
+
+        </div>
+
+        <% @posts.each do |post| %>
+
+
+
+        <div class="post">
+          <h2><%= link_to "#{post.name}", post %></h2>
+          <p class="author-category">By <a href=""> admin </a> in  <a href="">WeBuyGoods</a>
+          </p>
+          <hr>
+          <p class="date-comments">
+            <a href="post.html"><i class="fa fa-calendar-o"></i> <%= post.created_at %></a>
+            <a href="post.html"><i class="fa fa-comment-o"></i> 8 Comments</a>
+          </p>
+          <div class="image">
+            <a href="post.html">
+              <img src="/img/blog2.jpg" class="img-responsive" alt="Example blog post alt">
+            </a>
+          </div>
+          <p class="intro"><%= post.text %></p>
+          <p class="read-more"><a href="post.html" class="btn btn-primary">Continue reading</a>
+          </p>
+        </div>
+
+
+
+
+
+
+        <% end %>
+
+        <ul class="pager">
+          <li class="previous"><a href="#">&larr; Older</a>
+          </li>
+          <li class="next disabled"><a href="#">Newer &rarr;</a>
+          </li>
+        </ul>
+
+
+      </div>
+      <!-- /.col-md-9 -->
+
+      <!-- *** LEFT COLUMN END *** -->
+
+
+
+
+
+
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /#content -->
+
+</div>
+
+ <!-- /.#all -->
