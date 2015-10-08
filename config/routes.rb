@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :caurusel_images
+  resources :products
+  get 'admin/index'
+
   get 'main/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
