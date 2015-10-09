@@ -1,6 +1,5 @@
 class CauruselImagesController < ApplicationController
   before_action :set_caurusel_image, only: [:show, :edit, :update, :destroy]
-  http_basic_authenticate_with name: "admin", password: "password"
  layout "admin"
   # GET /caurusel_images
   # GET /caurusel_images.json
