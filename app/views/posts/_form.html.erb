@@ -12,18 +12,51 @@
   <% end %>
 
   <div class="field form-group">
-    <%= f.label :name, class: 'col-sm-2 control-label' %><br>
+    <%= f.label :title_1, class: 'col-sm-2 control-label' %><br>
     <div class="col-sm-10">
-    <%= f.text_field :name , class: 'form-control'%>
+    <%= f.text_field :title_1 , class: 'form-control'%>
     </div>
   </div>
+    <br/>
+    <div class="field form-group">
+      <%= f.label :title_2, class: 'col-sm-2 control-label' %><br>
+      <div class="col-sm-10">
+        <%= f.text_field :title_2 , class: 'form-control'%>
+      </div>
+    </div>
+    <hr/>
     <br/> <br/>
   <div class="field form-group">
-    <%= f.label :text, class: 'control-label col-sm-2' %><br>
+    <%= f.label :description, class: 'control-label col-sm-2' %><br>
     <div class="col-sm-10">
-    <%= f.text_area :text, class: 'form-control' %>
+    <%= f.text_area :description, class: 'form-control' %>
     </div>
   </div>
+    <br/>
+    <br/>
+    <div class="field form-group">
+      <%= f.label "post", class: 'control-label col-sm-2' %><br>
+      <div class="col-sm-10">
+        <%= f.text_area :text, class: 'form-control' %>
+      </div>
+    </div>
+    <br/>
+    <hr/>
+    <div class="field form-group">
+      <%= f.label "first image 620x410", class: 'control-label col-sm-2' %><br>
+      <div class="col-sm-10">
+        <%= f.file_field :img_1, class: 'form-control' %>
+      </div>
+    </div>
+    <br/>
+    <div class="field form-group">
+      <%= f.label "second image 620x410", class: 'control-label col-sm-2' %><br>
+      <div class="col-sm-10">
+        <%= f.file_field :img_2, class: 'form-control' %>
+      </div>
+    </div>
+
+    <hr/>
 
   <div class="actions">
     <%= f.submit class: 'btn btn-success' %>
