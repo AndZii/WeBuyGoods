@@ -82,7 +82,7 @@ end
 
 ActionMailer::Base.delivery_method = :smtp
 ActionMailer::Base.smtp_settings = {
-    :address => "sellelec@sellelectronics.nyc",
+    :address => "supersonic.webhostserver.biz",
     :port => 25,
     :domain => "sellelectronics.nyc",
     :authentication => :login,
