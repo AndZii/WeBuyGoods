@@ -30,6 +30,7 @@ class PostCommentsController < ApplicationController
       if @post_comment.save
         post = Post.find_by :id => post_comment_params[:post_id]
         post.post_comments << @post_comment
+        PostMailer.userLeaveComment(@post_comment).deliver_now
         format.html { redirect_to blog_show_path(:id => post_comment_params[:post_id]), notice: 'Post comment was successfully created.' }
         format.json { render :show, status: :created, location: @post_comment }
       else
