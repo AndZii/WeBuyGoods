@@ -82,7 +82,7 @@ end
 
 ActionMailer::Base.delivery_method = :smtp
 ActionMailer::Base.smtp_settings = {
-    :address => "localhost",
+    :address => "sellelec@sellelectronics.nyc",
     :port => 25,
     :domain => "sellelectronics.nyc",
     :authentication => :login,
